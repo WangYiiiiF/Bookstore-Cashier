@@ -22,7 +22,7 @@ public:
 	Sales_data(const string& s, unsigned n, double p) :bookNO(s), units_sold(n), revenue(p* n) {}
 	Sales_data(const string& s) :bookNO(s) {}
 	Sales_data(istream&);
-
+	//成员函数
 	string isbn() const;			//const成员函数：表示该函数不会修改类的数据成员
 	Sales_data& combine(const Sales_data&);
 	double avg_price() const;		//const成员函数 
@@ -54,7 +54,7 @@ ostream& print(ostream& os, const Sales_data& item)
 	return os;
 }
 
-//构造函数
+//构造函数 和其他成员函数一样，当我们在类的外部定义构造函数时，必须指明该构造函数是哪个类的成员 
 Sales_data::Sales_data(istream& is)
 {
 	read(is, *this);
