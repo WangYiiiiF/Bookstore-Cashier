@@ -17,7 +17,6 @@ private:
 
 	//公有成员声明
 public:
-
 	//构造函数
 	Sales_data() = default;
 	Sales_data(const string& s, unsigned n, double p) :bookNO(s), units_sold(n), revenue(p* n) {}
@@ -55,14 +54,13 @@ ostream& print(ostream& os, const Sales_data& item)
 	return os;
 }
 
-//成员函数
-
 //构造函数
 Sales_data::Sales_data(istream& is)
 {
 	read(is, *this);
 }
 
+//成员函数
 string Sales_data::isbn() const
 {
 	return this->bookNO;

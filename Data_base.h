@@ -9,7 +9,7 @@ double total_price_temp;
 
 int cmd_exec(string cmd, int (*callback)(void*, int, char**, char**));
 int Init();
-int Instert(istream& is);
+int Instert(string ISBN, int quantity, double unit_price);
 int Select(string ISBN);
 int Updata(string ISBN, string Quantity, string Unit_price, string Total_price);
 int Exist(string ISBN);
