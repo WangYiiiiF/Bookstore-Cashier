@@ -70,7 +70,7 @@ Sales_data& Sales_data::combine(const Sales_data& item)
 {
 	this->units_sold += item.units_sold;
 	this->revenue += item.revenue;
-	return *this;			//返回调用该函数的对象
+	return *this;	 		//返回调用该函数的对象
 }
 
 double Sales_data::avg_price() const

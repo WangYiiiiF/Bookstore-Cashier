@@ -4,7 +4,7 @@ int main()
 {
 	cout << "-----Bookstore Cashier Program-----" << endl;
 	Sales_data total;
-	//Init();		Only Run Once.
+	//Init();		//Only Run Once.
 	//PrintData();  Print ALL data
 	if (read(cin, total))
 	{
